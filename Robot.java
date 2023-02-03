@@ -6,7 +6,7 @@ package frc.robot;
 import edu.wpi.first.wpilibj.motorcontrol.MotorControllerGroup;
 import com.ctre.phoenix.motorcontrol.can.WPI_TalonSRX;
 import com.ctre.phoenix.motorcontrol.TalonSRXControlMode;
-import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
+//import com.ctre.phoenix.motorcontrol.can.WPI_VictorSPX;
 import edu.wpi.first.wpilibj.XboxController;
 import edu.wpi.first.wpilibj.TimedRobot;
 import edu.wpi.first.wpilibj.drive.DifferentialDrive;
@@ -25,10 +25,12 @@ public class Robot extends TimedRobot {
   
   private final WPI_TalonSRX talonMotorL1 = new  WPI_TalonSRX(1);
   private final WPI_TalonSRX talonMotorL2 = new WPI_TalonSRX(2);
-  private final WPI_VictorSPX victorMotorR3 = new WPI_VictorSPX(3);
-  private final WPI_VictorSPX victorMotorR4 = new WPI_VictorSPX(4);
+  private final WPI_TalonSRX talonMotorR3 = new  WPI_TalonSRX(3);
+  private final WPI_TalonSRX talonMotorR4 = new WPI_TalonSRX(4);
+  //private final WPI_VictorSPX victorMotorR3 = new WPI_VictorSPX(3);
+  //private final WPI_VictorSPX victorMotorR4 = new WPI_VictorSPX(4);
   private final MotorController leftMotors = new MotorControllerGroup(talonMotorL1, talonMotorL2);
-  private final MotorController rightMotors = new MotorControllerGroup(victorMotorR3,victorMotorR4);
+  //private final MotorController rightMotors = new MotorControllerGroup(victorMotorR3,victorMotorR4);
   private final double leftDrive = 0;
   private final double rightDrive = 0;
 
